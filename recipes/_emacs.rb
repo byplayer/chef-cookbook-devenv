@@ -17,5 +17,5 @@ execute "Extracting and Building emacs #{node['emacs']['revision']}(#{node['emac
     make install
     echo #{node['emacs']['git_revision']} > #{node['emacs']['install_dir']}/REVISION
   COMMAND
-  not_if "#{node['emacs']['install_dir']}/REVISION | grep #{node['emacs']['version']}"
+  not_if "cat #{node['emacs']['install_dir']}/REVISION | grep #{node['emacs']['version']}"
 end
