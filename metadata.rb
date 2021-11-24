@@ -9,7 +9,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
 %w[tmux apt universal-ctags global
-   docker docker_compose
+   docker
    updatedb
    the_silver_searcher apt-repo heroku-toolbelt
    golang pyenv rbenv kubectl windows

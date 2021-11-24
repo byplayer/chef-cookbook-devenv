@@ -21,6 +21,7 @@
   devenv::_packages
   devenv::_rbenv
   devenv::_docker
+  devenv::_docker-compose
   devenv::_devuser
   devenv::_node
   devenv::_vbox-guest-utils
