@@ -24,5 +24,6 @@ template '/etc/profile.d/docker-compose.sh' do
   owner 'root'
   group 'root'
   mode '0644'
+  variables install_dir: node['docker-compose']['install_dir']
   action :create
 end
