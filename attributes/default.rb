@@ -68,7 +68,7 @@ default['rbenv']['rubies'] = []
 
 # docker-compose
 default['docker-compose']['version'] = '2.1.1'
-default['docker-compose']['install_dir'] = '/opt/docker-compose/bin'
+default['docker-compose']['install_dir'] = '/usr/local/bin'
 
 # knife config
 default['devenv']['user']['knife_config'] = nil
