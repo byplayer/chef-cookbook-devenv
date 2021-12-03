@@ -5,3 +5,5 @@ apt_repository 'vscode' do
   uri 'https://packages.microsoft.com/repos/vscode'
   action :add
 end
+
+apt_update 'update'
