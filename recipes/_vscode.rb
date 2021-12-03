@@ -1,7 +1,6 @@
 apt_repository 'vscode' do
-  key ['microsoft.asc']
+  key ['https://packages.microsoft.com/keys/microsoft.asc']
   components ['stab']
-  keyserver 'packages.microsoft.com'
   trusted true
   uri 'https://packages.microsoft.com/repos/vscode'
   action :add
