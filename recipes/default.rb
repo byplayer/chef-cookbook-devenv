@@ -10,6 +10,7 @@
 #
 
 %w[
+  devenv::_chef_gems
   golang
   yarn::default
   devenv::_freemind
