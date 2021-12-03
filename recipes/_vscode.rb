@@ -1,4 +1,5 @@
 apt_repository 'vscode' do
+  arch 'amd64'
   key ['https://packages.microsoft.com/keys/microsoft.asc']
   components ['main']
   distribution 'stable'
