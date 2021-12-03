@@ -13,6 +13,7 @@
   clang-format
   cmake
   cmigemo
+  code
   cpanminus
   curl
   dconf-editor
