@@ -22,11 +22,6 @@ default['devenv']['.git-extensions']['ref'] = 'main'
 default['devenv']['.git-extensions']['checkout_branch'] = nil
 default['devenv']['.git-extensions']['enable_checkout'] = false
 
-default['devenv']['.ruby_tool']['repo'] = 'https://github.com/byplayer/ruby_tool.git'
-default['devenv']['.ruby_tool']['ref'] = 'main'
-default['devenv']['.ruby_tool']['checkout_branch'] = nil
-default['devenv']['.ruby_tool']['enable_checkout'] = false
-
 default['devenv']['.node_tool']['repo'] = 'https://github.com/byplayer/node_tool.git'
 default['devenv']['.node_tool']['ref'] = 'main'
 default['devenv']['.node_tool']['checkout_branch'] = nil
@@ -107,3 +102,10 @@ default['unco']['version'] = '0.2.0'
 default['local_tools']['repo'] = 'https://github.com/byplayer/local_tools.git'
 default['local_tools']['ref'] = 'main'
 default['local_tools']['install_target'] = '/opt/local_tools'
+
+# ruby_tool
+default['ruby_tool']['install_path'] = '/opt/ruby_tool'
+default['ruby_tool']['repo'] = 'https://github.com/byplayer/ruby_tool.git'
+default['ruby_tool']['ref'] = 'main'
+default['ruby_tool']['checkout_branch'] = nil
+default['ruby_tool']['enable_checkout'] = false

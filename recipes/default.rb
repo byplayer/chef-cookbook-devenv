@@ -33,6 +33,7 @@
   devenv::_local_tools
   devenv::_python
   devenv::_vscode
+  devenv::_ruby_tool
 ].each do |recipe|
   include_recipe recipe
 end

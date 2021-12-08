@@ -35,7 +35,6 @@ ENV['PATH'] = "/opt/git/bin:#{ENV['PATH']}"
 %w[.zsh.d
    .emacs.d
    .git-extensions
-   .ruby_tool
    .node_tool
    .highlight].each do |name|
   git "#{devenv_user_home}/#{name}" do
@@ -225,19 +224,6 @@ bash 'setup emacs hooks' do
   code <<-EOH
     cd .emacs.d
     ./git_hooks/post-merge
-  EOH
-end
-
-# ruby tool
-bash 'ruby tool' do
-  cwd devenv_user_home
-  user node['devenv']['user']['name']
-  group node['devenv']['user']['name']
-  environment({ 'HOME' => devenv_user_home })
-
-  code <<-EOH
-    cd .ruby_tool
-    ./install.sh
   EOH
 end
 
